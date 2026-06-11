@@ -1,0 +1,14 @@
+RetailSync Data Platform
+Project Overview
+
+RetailSync Data Platform is an end-to-end Data Engineering project built using Python, Pandas, SQL, SQLite, and Data Quality processes.
+
+The platform simulates a retail business data pipeline that:
+
+Generates retail order data
+Performs data quality validation
+Cleans bad records
+Loads data into a database
+Executes SQL analytics
+Produces business reports
+Creates operational logs
