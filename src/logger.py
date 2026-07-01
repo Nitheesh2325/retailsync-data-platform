@@ -1,9 +1,12 @@
-import logging
+from datetime import datetime
 
-logging.basicConfig(
-    filename="logs/pipeline.log",
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
-)
+LOG_FILE = "logs/pipeline.log"
 
-logger = logging.getLogger()
+def log(message):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    output = f"[{timestamp}] {message}"
+
+    print(output)
+
+    with open(LOG_FILE, "a") as file:
+        file.write(output + "\n")
