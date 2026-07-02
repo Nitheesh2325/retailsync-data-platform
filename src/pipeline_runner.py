@@ -17,6 +17,7 @@ log("\nStep 3 - Running SQL Analytics...")
 os.system("python src/sql_analytics.py")
 log("\nStep 4 - Generating Dashboard...")
 os.system("python src/dashboard.py")
+os.startfile("reports/charts/monthly_revenue.png")
 
 end = time.time()
 
