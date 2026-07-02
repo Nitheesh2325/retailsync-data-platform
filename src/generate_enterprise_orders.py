@@ -72,7 +72,9 @@ for i in range(1, 100001):
 
 df = pd.DataFrame(orders)
 
-df.to_csv("data/raw/orders.csv", index=False)
+from config import RAW_DATA_PATH
+
+df.to_csv(RAW_DATA_PATH, index=False)
 
 print("100,000 Retail Orders Created Successfully")
 print(df.head())

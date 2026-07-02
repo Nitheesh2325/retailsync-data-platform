@@ -2,7 +2,7 @@ import pandas as pd
 import sqlite3
 
 # Connect database
-conn = sqlite3.connect("retailsync.db")
+from config import DB_PATH
 
 # Read clean data
 df = pd.read_csv("data/staging/clean_orders.csv")

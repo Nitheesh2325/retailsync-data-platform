@@ -15,6 +15,8 @@ os.system("python src/load_to_sqlite.py")
 
 log("\nStep 3 - Running SQL Analytics...")
 os.system("python src/sql_analytics.py")
+log("\nStep 4 - Generating Dashboard...")
+os.system("python src/dashboard.py")
 
 end = time.time()
 
